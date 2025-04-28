@@ -1,0 +1,422 @@
+@charset "utf-8";
+
+
+a{ color: #1c1c1c;}
+p{ color: #1c1c1c }
+body{ overflow: hidden; }
+body { overflow-y: scroll; } /* 기본 스크롤 유지 */ 
+
+
+
+#main {
+  width: 100%;
+  height: 3500px; 
+  margin:0 auto;
+  animation: fadein 5s ease 3s;
+}
+@keyframes fadein {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+
+.page__wrapper {
+  position: relative;
+  width: 100%;
+  height: auto;
+  will-change: transform; /* 성능 최적화 */
+}
+
+.page {
+  width: 100%;
+  height: auto;
+}
+
+
+
+.menu {
+    width: 100%;
+    position: fixed;
+    font-size: 3.8rem;
+    font-weight: bold;
+  }
+/*   .menu p:nth-child(1){
+    position: relative;
+    top: 30px;
+    left: 30px;
+  } */
+  .menu p:nth-child(1){
+    position: fixed;
+    top: 30px;
+    right: 1%;
+  }
+  .menu p:nth-child(2){
+    position: fixed;
+    right: 2%;
+    top:90vh;
+  }
+  
+  .menu p:nth-child(3){
+    position: fixed;
+    left: 2%;
+    top: 90vh;
+  }
+
+  /*   
+  .menu p:nth-child(1):after {
+    content: "";
+    position: absolute;
+    top: 49%;
+    left: 42.2%;
+    transform: translate(-50%, -50%);
+    width: 143px;
+    height: 74px;
+    background: url('../img/main/about.png') no-repeat center;
+    background-size: cover;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    z-index: -1;
+  }
+  
+  .menu p:nth-child(1):hover::after {
+    opacity: 1;
+  } */
+  
+  .menu p:nth-child(1):after {
+    content: "";
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 240px;
+    height: 147px;
+    background: url('../img/main/starss.png') no-repeat center;
+    background-size: cover;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    z-index: -1;
+  }
+  
+  .menu p:nth-child(1):hover::after {
+    opacity: 1;
+  }
+  
+  .menu p:nth-child(2):after {
+    content: "";
+    position: absolute;
+    top: -100%;
+    left: 40%;
+    transform: translate(-50%, -50%);
+    width: 224px;
+    height: 205px;
+    background: url('../img/main/me1.png') no-repeat center;
+    background-size: cover;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    z-index: -1;
+  }
+  
+  .menu p:nth-child(2):hover::after {
+    opacity: 1;
+  }
+
+  .menu p:nth-child(3):after {
+    content: "";
+    position: absolute;
+    top: 30%;
+    left: 37%;
+    transform: translate(-50%, -50%);
+    width: 156px;
+    height: 83px;
+    background: url('../img/main/home.png') no-repeat center;
+    background-size: cover;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    z-index: -1;
+  }
+  
+  .menu p:nth-child(3):hover::after {
+    opacity: 1;
+  }
+
+
+    
+  /*fadeup*/
+  @keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(20px); /* Adjust for upward movement */
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+  }
+  /*menu ani*/
+      
+
+      
+      
+
+.container {
+    display: flex;
+    cursor: pointer;
+    letter-spacing: -0.1em;
+  }
+.container a{
+    color: #1c1c1c;
+}
+  .letter {
+    display: inline-block;
+    position: relative;
+    /* Slow transition for returning to the original state */
+    transition: transform 0.8s ease-in-out, top 0.8s ease-in-out, left 0.8s ease-in-out;
+    transform: rotate(0deg);
+    top: 0;
+    left: 0;
+  }
+  
+   /* Hover effect for each letter with quick transitions */
+   .container:hover .letter {
+    transition: transform 0.4s ease-in-out, top 0.4s ease-in-out, left 0.4s ease-in-out;
+  }
+  
+   /* Specific transforms for each letter on hover */
+  
+   .container:hover .a { transform: rotate(20deg); top: -5px; left: -5px;}
+   .container:hover .b { transform: rotate(-10deg); top: 10px; }
+   .container:hover .u { transform: rotate(-5deg); top: 10px; }
+  
+  
+  
+   .container:hover .p { transform: rotate(-15deg); top: 5px; left: -5px; }
+   .container:hover .r { transform: rotate(20deg); top: 10px; right: -5px; }
+   .container:hover .o { transform: rotate(10deg); top: -10px; }
+   .container:hover .j { transform: rotate(-25deg); top: 15px; left: 0px; }
+   .container:hover .e { transform: rotate(20deg); top: -5px; }
+   .container:hover .c { transform: rotate(-10deg); top: 5px; }
+   .container:hover .t { transform: rotate(15deg); top: -10px; left: 5px; }
+   .container:hover .s { transform: rotate(-5deg); top: 10px; }
+  
+  
+   .container:hover .cc { transform: rotate(-30deg); top: -3px; }
+   .container:hover .oo { transform: rotate(-10deg); top: 10px; left: 3px;}
+   .container:hover .nn { transform: rotate(5deg); top: -10px; }
+   .container:hover .tt { transform: rotate(5deg); top: 10px; left: 5px;}
+   .container:hover .aa { transform: rotate(-25deg); top: -10px; left: 3px;}
+   .container:hover .ccc { transform: rotate(30deg); top: 10px; left: 3px;}
+   .container:hover .ttt { transform: rotate(-10deg); top: -10px; left: 3px;}
+  
+   .container:hover .h { transform: rotate(-15deg); top: 5px; left: -5px; }
+   .container:hover .m { transform: rotate(20deg); top: -10px; right: -5px; }
+   .container:hover .ee { transform: rotate(-30deg); top: 5px; }
+
+  /* Keyframes for slide-up animation */
+  @keyframes slideUp {
+    0% {
+      opacity: 0;
+      transform: translateY(30px); /* Start below the normal position */
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0); /* End at normal position */
+    }
+  }
+
+  /*************about***********/
+  .topimg{
+    position: fixed; left: 50%; transform: translateX(-50%); transform: translateY(-450%);
+  }
+  .about2{
+    position: relative;
+    left: 50%; transform: translateX(-50%);
+    top: 300px;
+    font-size: 17rem;
+    font-weight: 800;
+    letter-spacing: -0.1em;
+    z-index: 999;
+    display: inline-block;
+  }
+  .container2 a span{
+    color: #1c1c1c;
+  }
+
+  
+  .container2 .letter {
+    display: inline-block;
+    position: relative;
+    transition: transform 0.3s ease-out, top 0.3s ease-out, left 0.3s ease-out;
+    transform: rotate(0deg); /* 초기 회전 없음 */
+    top: 0; /* 초기 위치 */
+    left: 0; /* 초기 위치 */
+  }
+  
+  
+  
+   /* Specific transforms for each letter on hover */
+  
+   /* .container2:hover .a { transform: rotate(20deg); top: -15px; left: -15px;}
+   .container2:hover .b { transform: rotate(-10deg); top: 25px; left: -10px; }
+   .container2:hover .u { transform: rotate(-5deg); top: 20px; }
+  
+  
+  
+   .container2:hover .p { transform: rotate(-15deg); top: 10px; left: -10px; }
+   .container2:hover .r { transform: rotate(20deg); top: 15px; right: -10px; }
+   .container2:hover .o { transform: rotate(10deg); top: -20px; }
+   .container2:hover .j { transform: rotate(-25deg); top: 15px; left: 0px; }
+   .container2:hover .e { transform: rotate(20deg); top: -5px; }
+   .container2:hover .c { transform: rotate(-10deg); top: 5px; }
+   .container2:hover .t { transform: rotate(15deg); top: -20px; left: 15px; }
+   .container2:hover .s { transform: rotate(-5deg); top: 10px; }
+  
+  
+   .container2:hover .cc { transform: rotate(-30deg); top: -3px; }
+   .container2:hover .oo { transform: rotate(-10deg); top: 10px; left: 3px;}
+   .container2:hover .nn { transform: rotate(5deg); top: -10px; }
+   .container2:hover .tt { transform: rotate(5deg); top: 10px; left: 5px;}
+   .container2:hover .aa { transform: rotate(-25deg); top: -10px; left: 3px;}
+   .container2:hover .ccc { transform: rotate(30deg); top: 10px; left: 3px;}
+   .container2:hover .ttt { transform: rotate(-10deg); top: -10px; left: 3px;} */
+
+
+   
+   .aboutimg {
+    position: relative;
+    transition: transform 0.3s ease-out;
+  }
+  
+  .aboutimg.scrolled {
+    transform: translateY(-20px);
+  }
+  .aboutimg img {
+    transition: transform 0.3s ease-out;
+    transform: translateY(-50px);
+  }
+    
+   
+  
+   .aboutimg .mr{
+    position: relative;
+    top: 10px;
+    left: 28.8%;
+    width: 10%;
+    height: auto;
+   }
+   .aboutimg .que{
+    width: 15%;
+    height: auto;
+    position: relative;
+    top: 250px;
+    left: 10.5%;
+   }
+   .aboutimg .cn{
+    position: relative;
+    width: 10%;
+    height: auto;
+    top: 100px;
+    left: 40%;
+   }
+
+
+
+
+   .profile{
+    display: flex; justify-content: center;
+    position: relative;
+    top: 500px;
+    left: 50%;
+    transform: translateX(-50%);
+   }
+   
+   .profile h2{
+    margin-bottom: 96px;
+    font-size: 3.8rem;
+    font-weight: 600;
+    margin-left: -25%;
+   }
+   .profile .gyuri{
+    margin-bottom: 23px;
+    width: 50%;
+    height: auto;
+   }
+   .profile p{
+    font-size: 3rem;
+    font-weight: 500;
+    }
+
+
+    .profile .left{
+      width: 30%; text-align: center; margin-right: 10%;
+    }
+    .profile .right{
+      width: 40%; padding-top: 150px;
+    }
+
+    .profile dt{
+        font-size: 3rem;
+        font-weight: 600;
+        margin-bottom: 40px;
+    }
+    .profile dd{
+        margin-left:40px;
+        font-size: 2rem;
+        line-height: 2;
+    }
+    .profile span{
+      color: rgba(0, 0, 0, 0.5);
+    }
+    .profile .last{
+        margin-bottom: 139px;
+    }
+    .profile .skill2{
+        display: inline-block;
+        width: 70%;
+        height: auto;
+    }
+
+    .empathy{
+        font-size:6vw;
+        font-weight: 600;
+        position: fixed;
+        top: 800px;
+        left: 30px;
+        display: inline-block;
+        z-index: 9999;
+    }
+    .people{
+        font-size: 6vw;
+        font-weight: 600;
+        position: fixed;
+        top: 950px;
+        right: 1%;
+        display: inline-block;
+        padding-bottom: 500px;
+        z-index: 99;
+    }
+    .heart{
+        position: fixed;
+        top: 2650px;
+        left: 100px;
+        z-index: -1;
+    }
+    .arrow2{
+        position: fixed;
+        top: 2620px;
+        left: 60%;
+    }
+    #arrow3{
+        position: relative;
+        display: inline-block;
+        top: 1400px;
+        left:50%;
+        display: inline-block;
+        z-index: 99;
+    }
+
+ 
+
