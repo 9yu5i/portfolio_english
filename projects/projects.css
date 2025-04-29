@@ -358,12 +358,12 @@ body {
 .overlay-content a {
   text-decoration: none;
   color: #fff;
-  font-size: 3.5rem;
+  font-size: 4vw;
   font-weight: bold;
   margin: 0 100px;
   transition: transform 0.3s ease;
   position: relative;
-  top: 400px;
+  top: 25vw;
 }
 
 
@@ -435,12 +435,12 @@ body {
 .overlay-content2 a {
   text-decoration: none;
   color: #fff;
-  font-size: 3.5rem;
+  font-size: 4vw;
   font-weight: bold;
   margin: 0 70px;
   transition: transform 0.3s ease;
   position: relative;
-  top: 220px;
+  top: 15vw;
 }
 
 
@@ -503,15 +503,15 @@ body {
   position: relative;
 }
 
-.overlay-content3 a {
+.overlay-content3 a{
   text-decoration: none;
   color: #fff;
-  font-size: 3.5rem;
+  font-size: 4vw;
   font-weight: bold;
   margin: 0 70px;
   transition: transform 0.3s ease;
   position: relative;
-  top: 220px;
+  top: 15vw;
 }
 
 
@@ -559,11 +559,11 @@ body {
 .overlay-content4 a {
   text-decoration: none;
   color: #fff;
-  font-size: 3.5rem;
+  font-size: 4vw;
   font-weight: bold;
   transition: transform 0.3s ease;
   position: relative;
-  top: 220px;
+  top: 15vw;
 }
 
 
